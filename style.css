@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+}
+header,.two{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('images/b.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+td{
+    color: #fff;
+}
+.one{
+    color: #fff;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+    font-weight: lighter ;
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-left:40px;
+    margin-top: 10px;
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px!important;
+    
+    
+}
+.main-nav li a{
+    padding: 5px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: 100;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+.four{
+    margin-top: 20px;
+    margin-right: 50px;
+    float: none;
+}
+.five{
+    margin-top: 30px;
+    float: inherit;
+    text-align: center;
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 55%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: lighter ;
+}
+h2{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: lighter ;
+}
+.btn{
+    display: inline-block;
+    padding: 10px  30px;
+    font-weight: lighter;
+    text-decoration: none;
+    border-radius: 200px;
+    transition background-color 0.2s, border 0.2s, color: 0.2s;
+}
+.btn-full{
+    background-color: transparent;
+    color:#bf55ec;
+    margin-right: 15px;
+    border: 1px solid#bf55ec;
+}
+.btn-full:hover{
+    background-color: whitesmoke ;
+}
+
+.btn-nav{
+    background-color: transparent;
+    color:  whitesmoke;
+    border: 1px solid whitesmoke;
+}
+.btn-nav:hover{
+    background-color:#bf55ec ;
+} 
+.colorchange{
+    animation: colorchangemycafe 1s infinite;
+}
+.mobile-icon{
+    display: none;
+}
+@keyframes colorchangemycafe{
+    0%{ color: red;}
+    25%{ color: #bf55ec;}
+    50%{ color: white;}
+    100%{ color: #bf55ec;}
+}
+
+
+.contactUs,.contactUs1{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0px;
+    position: relative;
+}
+
+.contactUs:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(330deg  #bf55ec; 55% , #fff 60%) ;
+}
+.form-button button{
+    border: 1px solid  #bf55ec;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #bf55ec;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+}
+.form:hover{
+    background: #fff;
+    color:  #bf55ec;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+::placeholder{
+    font-size: 0.85rem;
+} 
+.done-order{
+    margin-top: 80px;
+}
+.col-sm-4 a,{
+    color: #bf55ec; 
+}
+.btn4{
+    color: #bf55ec; 
+    background-color: transparent;
+}
+@keyframes colorchangemycafe{
+    0%{ color: red;}
+    25%{ color: #bf55ec;}
+    50%{ color: white;}
+    100%{ color: #bf55ec;}
+}
+
+@media only screen and (max-width: 1180px){
+    .main-content-header{
+        width: 100%;
+        padding:0 2%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 180%;}
+    .main-nav{display: none;}
+    .mobile-icon{
+        display: inline-block;
+        color: #fff;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .main-nav{ float: left;}
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .btn-full{
+        margin-bottom: 20px;
+    }
+    h1{font-size: 160%;}
+}

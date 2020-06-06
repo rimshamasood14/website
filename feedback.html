@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>CONTACT US</title>
+</head>
+<body>
+    <header >
+        <nav class="navbar">
+            <div class="row clearfix">
+                <img src="images/images.jpg" class="logo">
+                <ul class="main-nav"  id="check-class">
+                    <li><a href="index.html"><b> Home </b></a></li>
+                    <li><a href= "order.html"><b>HOW TO ORDER</b></a></li>
+                    <li><a href="menu.html"><b>MENU</b></a></li>
+                    <li><a href="feedback.html"><b>FEEDBACK</b></a></li>
+                    
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+
+            </div>
+        </nav>
+     
+    
+    <section class="contactUs" id="Contactusdiv">
+        <div class="container headings text-center">
+          <h1 class="text-center font-weight-bold"> <section class="pricing" id="pricingdiv">
+        <div class="container headings text-center">
+          <h1 class="text-center font-weight-bold pt-5 pb-1"> FEEDBACK PLEASE..!! </h1> 
+         <p class="text-capitallized pt-1"><h6> We all need people who will give us feedback.<br/> That's how we improve.☺ </h6> </p>
+        </div> 
+      
+        <div class="container">
+          <div class="row">
+             <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
+              <form action="/action_page.php">
+                <div class="form-group">
+                  <input type="Username" class="form-control" placeholder="Enter username" id="username" required autocomplete="off">
+                </div>
+                <form action="/action_page.php">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Enter email" id="email" required autocomplete="off">
+                  </div>
+                   
+                  <form action="/action_page.php">
+                    <div class="form-group">
+                      <input type="number" class="form-control" placeholder="Enter Mobile Number" id="Number" required autocomplete="off">
+                    </div>
+      
+                    <div class="form-group">
+                      <textarea class="form-control" rows="2" id="comment" placeholder="Enter Your Message"></textarea>
+                    </div>
+                <div class="form-button">
+                   <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+             </div>
+          </div>
+      
+        </div>
+
+
+
+
+    </header>   
+    <script type="text/javascript">
+        function slideshow(){
+            var x = document.getElementById('check-class');
+            if(x.style.display === "none"){
+                x.style.display = "block";
+            }
+            else{
+                x.style.display = "none";
+            }
+      
+        }
+        </script>
+</body>
+</html>

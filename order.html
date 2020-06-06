@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header >
+        <nav class="navbar">
+            <div class="row clearfix">
+                <img src="images/images.jpg" class="logo">
+                <ul class="main-nav"  id="check-class">
+                    <li><a href="index.html"><b> Home </b></a></li>
+                    <li><a href= "order.html"><b>HOW TO ORDER</b></a></li>
+                    <li><a href="menu.html"><b>MENU</b></a></li>
+                    <li><a href="feedback.html"><b>FEEDBACK</b></a></li>
+                    
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+
+            </div>
+        </nav>
+        
+    <div class="done-order">
+    <form class="container">
+        <div class="form-row">
+          <div class="form-group col-md-6 text-light">
+            <label for="inputname">YOUR NAME</label>
+            <input type="text" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-6 text-light">
+            <label for="inputnumber4">PHONE NUMBER</label>
+            <input type="number" class="form-control" id="inputPassword4">
+          </div>
+        </div>
+        <div class="form-group text-light">
+          <label for="inputAddress">ADDRESS</label>
+          <input type="text" class="form-control" id="inputAddress">
+        </div>
+        <!-- <div class="form-group text-light">row
+            <label for="inputorder">YOUR ORDER?</label>
+            <input type="text" class="form-control" id="inputorder" placeholder="Dine In/Take Away">
+          </div> -->
+        
+        <!-- <div class="form-row">
+          <div class="form-group col-md-6 text-light">
+            <label for="inputtime">CITY</label>
+            <input type="text" class="form-control" id="inputtime">
+          </div> -->
+          <div class="form-group text-light">
+            <label for="inputtime">WHEN?</label>
+            <input type="text" class="form-control" id="inputtime" placeholder="TIMING(11:00am to 12:00pm) ">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6 text-light">
+                <label for="inputorder">YOUR ORDER?</label>
+                <input type="text" class="form-control" id="inputorder" placeholder="Dine In/Take Away">
+            </div>
+
+          <div class="form-group col-md-4 text-light">
+            <label for="inputflavour">FLAVOUR?</label>
+            <select id="inputflavour" class="form-control">
+              <option selected>CHOCOLATE CAKE</option>
+              <option>STRAWBERRY SHORTCAKES</option>
+              <option>CHOCOLATE LAVA</option>
+              <option>POUND CAKE</option>
+              <option>BUTTER CAKE</option>
+              <option>BISCUIT CAKE</option>
+              <option>DRY-FRUIT CAKE</option>
+              <option>COFFEE CAKE</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2 text-light">
+            <label for="inputnumber">HOW MANY?</label>
+            <input type="number" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label text-light" for="gridCheck">
+              CONFIRM ORDER
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn4"><b> DONE</b></button>
+      </form>
+    </div>
+
+</header>
+<script type="text/javascript">
+    function slideshow(){
+        var x = document.getElementById('check-class');
+        if(x.style.display === "none"){
+            x.style.display = "block";
+        }
+        else{
+            x.style.display = "none";
+        }
+  
+    }
+</script>
+</body>
+</html>

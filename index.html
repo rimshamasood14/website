@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    
+</head>
+<body >
+    <header>
+        <nav class="navbar">
+            <div class="row clearfix">
+                <img src="images/images.jpg" class="logo">
+                <ul class="main-nav"  id="check-class">
+                    <li><a href="index.html"><b>HOME</b></a></li>
+                    <li><a href= "order.html"><b>HOW TO ORDER</b></a></li>
+                    <li><a href="menu.html"><b>MENU</b></a></li>
+                    <li><a href="feedback.html"><b>FEEDBACK</b></a></li>
+                    
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+
+            </div>
+        </nav>
+        <div class="main-content-header">
+        <h1><b>WELCOME TO <span class="colorchange">My Cafe</span>.<br>HOUSE OF CAKE LOVER Ooo YES..!!</b></h1>
+        <a href="order.html" class="btn btn-full"><b>Click To Order</b></a>
+        <a href="menu.html" class="btn btn-nav"><b>Show Me Menu</b></a>
+    </div>
+    </header>
+    <script type="text/javascript">
+    function slideshow(){
+        var x = document.getElementById('check-class');
+        if(x.style.display === "none"){
+            x.style.display = "block";
+        }
+        else{
+            x.style.display = "none";
+        }
+
+    }
+    </script>
+</body>
+</html>
