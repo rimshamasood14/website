@@ -10,7 +10,7 @@ body{
     font-family: 'Flamenco', cursive;
 }
 header,.two{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('images/b.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('b.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 150vh;
